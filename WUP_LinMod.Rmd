@@ -48,7 +48,7 @@ this plot shows that as the WT increases, the mpg decreases.
 
 ### numerical summary
 ```{r}
-cor(mpg~wt,data=mtcars)
+cor(mtcars$mpg,mtcars$wt)
 ```
 ### model summary
 
