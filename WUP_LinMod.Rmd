@@ -59,6 +59,11 @@ model1 <- lm(mpg ~ wt, data = mtcars)
 summary(model1)
 ```
 
+### predicted mpg
+```{r}
+NewData = data.frame(wt = 3.05, disp = 122)
+print(predict(model1, NewData, interval = 'predict'))
+```
 
 # Model 2:
 
@@ -68,8 +73,9 @@ summary(model1)
 
 ## data summary
 ### graphical summary
-
-
+```{r}
+plot(mpg ~ wt+disp, data = mtcars)
+```
 ### numerical summary
 
 ### model summary
@@ -113,7 +119,7 @@ plot(mpg ~ wt+disp, data=mtcars)
 ```
 
 ### numerical summary
-
+no numerical summary
 ### model summary
 
 
