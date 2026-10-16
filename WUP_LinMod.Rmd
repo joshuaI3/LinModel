@@ -76,7 +76,11 @@ print(predict(model1, NewData, interval = 'predict'))
 ```{r}
 plot(mpg~disp, data = mtcars)
 ```
+This chart shows that the lower the disp, the more mpg you will recieve.  
 ### numerical summary
+```{r}
+cor(mtcars$mpg,mtcars$disp)
+```
 
 ### model summary
 
@@ -122,6 +126,7 @@ summary(model3)
 ```{r}
 plot(mpg ~ wt+disp, data=mtcars)
 ```
+these charts show increase and decrease of disp and wt.  
 
 ### numerical summary   
 
@@ -148,4 +153,5 @@ anova_result <- anova(model1, model3)
 print(anova_result)
 ```
 
-# Discussion/Conclustions
+# Discussion/Conclusion 
+
