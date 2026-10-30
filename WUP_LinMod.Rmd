@@ -40,7 +40,7 @@ head(mtcars)
 ## data summary
 ### graphical summary
 ```{r}
-plot(mpg~wt,data=mtcars,pch=17)
+plot(mpg~wt,data=mtcars,pch=10)
 grid()
 ```
 this plot shows that as the WT increases, the mpg decreases.
@@ -152,6 +152,4 @@ summary(model3)
 anova_result <- anova(model1, model3)
 print(anova_result)
 ```
-
 # Discussion/Conclusion 
-
